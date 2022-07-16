@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter<Note> aa;
 
     @Override
+    protected void onResume() {
+        super.onResume();
+
+        btnRetrieve.performClick();
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
