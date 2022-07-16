@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditSong">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        app:srcCompat="@drawable/_50d7767840941_5b47bdfa76c00" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:fontFamily="@font/rusticoregular"
+        android:gravity="center_horizontal"
+        android:text="Edit song"
+        android:textColor="@color/bluish"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/rusticoregular"
+        android:gravity="center_horizontal"
+        android:text="------------------------"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purpleish"
+            android:fontFamily="@font/rusticoregular"
+            android:text="Update"
+            app:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purpleish"
+            android:fontFamily="@font/rusticoregular"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+</LinearLayout>
