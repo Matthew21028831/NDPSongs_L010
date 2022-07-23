@@ -7,6 +7,16 @@
     android:orientation="vertical"
     tools:context=".EditSong">
 
+    <TextView
+        android:id="@+id/goBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/rusticoregular"
+        android:paddingTop="10dp"
+        android:text=" Go Back"
+        android:textSize="18sp" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -32,14 +42,107 @@
         android:text="------------------------"
         android:textSize="36sp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adleryblockletter"
+        android:paddingLeft="20dp"
+        android:text="Edit a Song:"
+        android:textSize="24sp" />
+
     <EditText
         android:id="@+id/editSong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="30dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adleryblockletter"
+        android:paddingLeft="20dp"
+        android:text="Edit Singer's Name:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editSinger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adleryblockletter"
+        android:paddingLeft="20dp"
+        android:text="Edit Year of Release:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editRelease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adleryblockletter"
+        android:paddingLeft="20dp"
+        android:text="Edit the Rating:"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rgRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/oneStar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/twoStar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/threeStar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/fourStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/fiveStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5" />
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,6 +172,7 @@
             android:fontFamily="@font/rusticoregular"
             android:text="Delete" />
 
-    </LinearLayout>
 
+
+    </LinearLayout>
 </LinearLayout>

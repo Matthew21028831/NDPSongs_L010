@@ -187,29 +187,6 @@
                 android:text="------------------------"
                 android:textSize="36sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="51dp"
-                android:fontFamily="@font/rusticoregular"
-                android:gravity="center_horizontal"
-                android:text="Song List"
-                android:textColor="@color/bluish"
-                android:textSize="36sp" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/rusticoregular"
-                android:gravity="center_horizontal"
-                android:text="Click Song to Edit/Delete"
-                android:textSize="18sp" />
-
-            <ListView
-                android:id="@+id/lv"
-                android:layout_width="match_parent"
-                android:layout_height="382dp" />
-
         </LinearLayout>
     </ScrollView>
 
